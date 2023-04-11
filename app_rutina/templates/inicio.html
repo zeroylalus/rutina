@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    {% extends 'main/main.html' %}
+
+    {% load static %}
+
+    {% block main %}
+
+        <div>
+
+            <h1> EJERCICIOS X LA MAÑANA </h1>
+
+            <h2>Lista de ejercicios y estiramientos, que haré por la mañana y las partes del cuerpo que trabajan, repeticiones, y posiciones</h2>
+
+            <img src="{% static 'espalda.jpg' %}" alt="" width="800">
+            
+        </div>
+
+    {% endblock %}
+    
+</body>
+</html>

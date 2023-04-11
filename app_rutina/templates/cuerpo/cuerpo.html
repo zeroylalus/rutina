@@ -1,0 +1,18 @@
+
+{% extends 'main/main.html' %}
+
+{% block main %}
+
+    <div>
+
+        <h1>PARTES DEL CUERPO:</h1>
+
+        {% for i in f_cuerpo %}
+
+          <a href="{% url 'd_cuerpo' i.id %}" ><p class="cuerpo" > {{ i.cuerpo }} </p></a>
+
+        {% endfor %}
+
+    </div>
+
+{% endblock %}

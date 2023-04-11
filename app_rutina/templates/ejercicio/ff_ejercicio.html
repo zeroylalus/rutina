@@ -1,0 +1,22 @@
+
+{% extends 'main/main.html' %}
+
+{% block main %}
+
+    <div>
+
+        <h1>AGREGAR EJERCICIO:</h1>
+
+        <form method="POST">
+
+            {% csrf_token %}
+
+            {{ ff_ejercicio.as_p}}
+
+            <button>GUARDAR</button>
+            
+        </form>
+
+    </div>
+
+{% endblock %}

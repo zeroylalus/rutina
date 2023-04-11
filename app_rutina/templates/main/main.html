@@ -1,0 +1,23 @@
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'styles/main.css' %}">
+
+<nav class="nav"><ul>
+
+    <li><a href="{% url 'inicio' %}">INICIO</a></li>
+
+    <li><a href="{% url 'cuerpo' %}">PARTES DEL CUERPO</a></li>
+    <li><a href="{% url 'ejercicio' %}">EJERCICIOS</a></li>
+
+    <li><a href="{% url 'f_cuerpo' %}">AGREGAR PARTE DEL CUERPO</a></li>
+    <li><a href="{% url 'f_ejercicio' %}">AGREGAR EJERCICIO</a></li>
+
+</ul></nav>
+    
+<main class="main">
+
+    {% block main %}
+    {% endblock %}
+
+</main>
